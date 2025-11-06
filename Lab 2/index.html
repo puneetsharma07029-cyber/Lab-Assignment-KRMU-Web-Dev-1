@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+<h1>My Portfolio</h1>
+<nav>
+<a href="#About">About</a>
+<a href="#Skills">Skills</a>
+<a href="#Projects">Projects</a>
+<a href="#Contact">Contact</a>
+</nav>
+    </header>
+    <section id="About">
+        <h2>About me</h2>
+        <img src="https://i.postimg.cc/P53wKCCY/PU-PHOTO.jpg" alt="Profile Photo">
+        <p>Hello! My name is Puneet Sharma. I am learning web development and this is my first portfolio website</p>
+    </section>
+    <hr>
+    <section id="Skills">
+        <h2>My Skills</h2>
+        <table border="1">
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>
+                    CSS
+                </td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Learning</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <section id="Projects">
+        <h2>My Projects</h2>
+        <div class="Project-box">
+            <h3>Project 1</h3>
+            <p><b>Image Gallery</b>="A grid based image gallery using only html and css."</p>
+        </div>
+        <div class="Project-box">
+            <h3>Project 2</h3>
+            <p><b>Notes App</b>="A mini note-taking app that stores notes locally."</p>
+        </div>
+        <hr>
+        <section id="Contact">
+            <h2>Contact Me</h2>
+            <form>
+                <table id="box">
+                    <tr>
+                        <td class="butto">Name:</td>
+                        <td class="butto"><label for="Name"></label>
+                            <input type="text" id="Name" placeholder="Enter Your Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="butto">Email:</td>
+                        <td class="butto">
+                            <label for="Email"></label>
+                            <input type="Email" id="Email" placeholder="Enter Your Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="butto">Messages:</td>
+                        <td class="butto">
+                            <textarea name="Messages" id="Message" placeholder="Write Your Message"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="butto">
+                            <button type="submit">Send</button>
+
+                        </td>
+                    </tr>
+                   
+                </table>
+            </form>
+        </section>
+        <button id="backtotop">Back To Top</button>
+       
+       <script>
+           const btn = document.getElementById("backtotop");
+           window.onscroll = function() {
+            if (document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+         };
+         btn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+         };
+       </script>
+
+        
+        <hr class="line">
+        
+
+   
+   
+
+
+</body>
+</html>
