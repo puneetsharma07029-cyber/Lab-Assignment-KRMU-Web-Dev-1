@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learnify — Hero & Courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Learnify</div>
+    <div class="search">
+      <input type="search" placeholder="Search courses, topics..." aria-label="Search courses"/>
+    </div>
+    <div class="auth">
+      <button class="btn ghost">Login</button>
+      <button class="btn primary">Sign Up</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Unlock Your Potential with Online Learning</h1>
+        <p class="lead">Join thousands of learners and access top-rated courses from expert instructors. Learn anytime, anywhere.</p>
+
+        <form class="hero-search" onsubmit="return false">
+          <input type="text" placeholder="What do you want to learn?" aria-label="What do you want to learn?">
+          <button class="btn primary">Find Courses</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h2>Popular Categories</h2>
+      <div class="grid categories-grid">
+        <div class="cat">
+          <div class="icon">💻</div>
+          <div class="label">Development</div>
+        </div>
+        <div class="cat">
+          <div class="icon">🎨</div>
+          <div class="label">Design</div>
+        </div>
+        <div class="cat">
+          <div class="icon">💼</div>
+          <div class="label">Business</div>
+        </div>
+        <div class="cat">
+          <div class="icon">🗣</div>
+          <div class="label">Languages</div>
+        </div>
+        <div class="cat">
+          <div class="icon">📚</div>
+          <div class="label">Academics</div>
+        </div>
+        <div class="cat">
+          <div class="icon">🎵</div>
+          <div class="label">Music</div>
+        </div>
+        <div class="cat">
+          <div class="icon">🧘‍♀</div>
+          <div class="label">Lifestyle</div>
+        </div>
+        <div class="cat">
+          <div class="icon">🔬</div>
+          <div class="label">Science</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <h2>Featured Courses</h2>
+
+      <div class="controls">
+        <label>Level:
+          <select>
+            <option>All</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </label>
+        <label>Price:
+          <select>
+            <option>All</option>
+            <option>Free</option>
+            <option>Paid</option>
+          </select>
+        </label>
+        <label class="chk">
+          <input type="checkbox"> Certificate
+        </label>
+      </div>
+
+      <div class="grid courses-grid">
+        <article class="card">
+          <div class="thumb" style="background-image: url('https://picsum.photos/seed/web/600/300')"></div>
+          <div class="card-body">
+            <h3>Modern Web Development Bootcamp</h3>
+            <p class="meta">4.8 • 32k students</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb" style="background-image: url('https://picsum.photos/seed/design/600/300')"></div>
+          <div class="card-body">
+            <h3>Graphic Design Masterclass</h3>
+            <p class="meta">4.7 • 18k students</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb" style="background-image: url('https://picsum.photos/seed/code/600/300')"></div>
+          <div class="card-body">
+            <h3>Business Analytics Fundamentals</h3>
+            <p class="meta">4.6 • 12k students</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Learnify — All rights reserved</small>
+  </footer>
+</body>
+</html>
